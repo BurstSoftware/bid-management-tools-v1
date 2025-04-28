@@ -5,7 +5,7 @@ import streamlit as st
 if "bids" not in st.session_state:
     st.session_state.bids = []
 if "project_baseline" not in st.session_state:
-    st.session_state.project_baseline = 100000  # Default baseline cost
+    st.session_state.project_baseline = 100000.0  # Changed to float
 
 # App title
 st.title("Bid Management Tool for Tile Installation")
